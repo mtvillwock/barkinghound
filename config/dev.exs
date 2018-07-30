@@ -51,10 +51,10 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :chat, Chat.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "admin",
+  password: "",
   database: "chat_dev",
   hostname: "localhost",
   pool_size: 10
 
-import_config "dev.secret.exs"
+# import_config "dev.secret.exs"
